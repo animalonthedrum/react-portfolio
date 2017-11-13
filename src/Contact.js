@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import './App.css';
 import './Styles/contact.css';
+import FontAwesome from './font-awesome-4.7.0 3/css/font-awesome.min.css';
+
 
 
 export default class Contact extends Component {
@@ -20,7 +21,9 @@ export default class Contact extends Component {
                               <label htmlFor="message">Message*</label>
                               <textarea name="message" rows="8" cols="80" placeholder='I will read this'/>
     </form>
-  <button type="button" name="button">Send It</button>
+  <button type="button" name="button">Send It
+<i className="fa fa-paper-plane" aria-hidden="true"></i>
+  </button>
   </div>
   <div className='col-lg-6 col-md-12 col-sm-8'>
     <h2>CONTACT INFORMATION</h2>
@@ -31,10 +34,14 @@ export default class Contact extends Component {
       <div className='myMap'>
         <img className='img-fluid' src={require("./Images/myMap.png")} alt="Map" />
       </div>
+      <div>
+        <i className="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
+      </div>
 
   </div>
 </div>
 </div>
+
       </div>
     );
   }

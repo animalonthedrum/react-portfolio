@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import Home from './Home';
 import Contact from './Contact';
@@ -14,9 +13,8 @@ import Footer from './Footer';
 
 import {
   BrowserRouter as Router,
-  Route,
-  Link
-} from 'react-router-dom';
+  Route
+  } from 'react-router-dom';
 
 
 

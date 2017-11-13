@@ -1,8 +1,6 @@
 .footer{
-  width:100%;
+width: 100vw;
   float:left;
-position: absolute;
-
   background-color: blue;
   height:9em;
   justify-content: flex-end;
@@ -16,5 +14,15 @@ color: white;
   color: white;
   float: left;
   justify-content: flex-end;
+
+}
+
+.socialIcons {
+
+text-align: center;
+}
+
+.fa{
+  margin: 1em;
 
 }
