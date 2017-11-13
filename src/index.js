@@ -1,0 +1,41 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import registerServiceWorker from './registerServiceWorker';
+import Home from './Home';
+import Contact from './Contact';
+import Portfolio from './Portfolio';
+import 'bootstrap/dist/css/bootstrap.css';
+import Header from './Header';
+import Footer from './Footer';
+
+
+
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom';
+
+
+
+ReactDOM.render(<Router>
+<div>
+<Header />
+
+  <div className='content'>
+  <Route exact path="/" component={Home} />
+  <Route path="/portfolio" component={Portfolio} />
+    <Route path="/contact" component={Contact}/>
+    </div>
+      <Footer />
+</div>
+
+
+
+
+
+</Router>
+, document.getElementById('root'));
+registerServiceWorker();

@@ -1,0 +1,20 @@
+.footer{
+  width:4.7em;
+  float:left;
+position: absolute;
+
+  background-color: blue;
+  height:400px;
+  justify-content: flex-end;
+color: white;
+
+}
+
+.verticalText{
+	transform: rotate(90deg);
+	transform-origin: left bottom 0;
+  color: white;
+  float: left;
+  justify-content: flex-end;
+
+}
