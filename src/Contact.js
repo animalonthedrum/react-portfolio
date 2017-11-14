@@ -37,11 +37,11 @@ export default class Contact extends Component {
   <div className='col-lg-6 col-md-12 col-sm-8'>
     <h2>CONTACT INFORMATION</h2>
     <br />
-    <h3>BRETT MILLER  <a  href={`mailto:miller.brett.andrew@gmail.com`}><span className="fa fa-envelope-o" id='mail' aria-hidden="true"></span> </a>
-          <i className="fa fa-mobile" aria-hidden="true"></i></h3>
+    <h3><a  href={`mailto:miller.brett.andrew@gmail.com`}><span className="fa fa-envelope-o" id='mail' aria-hidden="true"></span> </a>BRETT@BRETTMILLER.ME</h3>
+
     <br />
-      <h4>MINNEAPOLIS MN 55413
-            <i className="fa fa-map-marker" aria-hidden="true"></i></h4>
+      <h4>
+            <i className="fa fa-map-marker" aria-hidden="true"></i>MINNEAPOLIS MN 55413</h4>
       <div className='myMap'>
         <img className='img-fluid' src={require("./Images/myMap.png")} alt="Map" />
       </div>

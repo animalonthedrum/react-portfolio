@@ -8,7 +8,7 @@ import Portfolio from './Portfolio';
 import 'bootstrap/dist/css/bootstrap.css';
 import Header from './Header';
 import Footer from './Footer';
-
+import './theme/globalStyles';
 
 
 import {

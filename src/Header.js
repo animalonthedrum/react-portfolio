@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ScrollAnimation from 'react-animate-on-scroll';
+
 
 
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
@@ -24,7 +24,7 @@ render(){
     <header className='wrapper'>
 
 
-      <Navbar color='faded'  fixed-top light toggleable>
+      <Navbar color="dark" className="navbar-dark navbar-expand-sm" toggleable>
 
         <div className='circle'><div className='cover'>
 </div></div>

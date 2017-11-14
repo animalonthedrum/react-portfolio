@@ -30,15 +30,3 @@ textarea {
 .container{
   overflow-y: hidden;
 }
-
-/*#mail:hover{
-  color:black;
-    transform: rotate(90deg);
-    content: " (" attr(href) ")";
-
-}
-
-#mail{
-  color:black;
-
-}*/
