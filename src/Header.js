@@ -21,12 +21,16 @@ render(){
   return (
     <header className='wrapper'>
       <Navbar color='faded' light toggleable>
-        <NavbarBrand className='mr-auto' tag={Link} to='/'>Brett Miller</NavbarBrand>
+
+        <div className='circle'><div className='cover'>
+</div></div>
+<NavbarBrand className='brand' tag={Link} to='/'>B.Miller</NavbarBrand>
+
           <NavbarToggler right onClick={this.toggleNavbar} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className='ml-auto' navbar>
                 <NavItem className='mx-auto'>
-                  <NavLink tag={Link} to='/'>Home</NavLink>
+                  <NavLink className='.menu' tag={Link} to='/'>Home</NavLink>
                   </NavItem>
                 <NavItem className='mx-auto'>
                   <NavLink tag={Link} to='/portfolio'>Portfolio</NavLink>

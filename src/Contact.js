@@ -1,10 +1,19 @@
 import React, { Component } from 'react';
 import './Styles/contact.css';
-import FontAwesome from './font-awesome-4.7.0 3/css/font-awesome.min.css';
+import './App.css';
+import './font-awesome-4.7.0 3/css/font-awesome.min.css';
 
 
 
 export default class Contact extends Component {
+  constructor(props){
+    super(props);
+
+    this.state = {
+      email: "miller.brett.andrew@gmail.com"
+    };
+  }
+
   render(){
     return(
       <div>
@@ -35,7 +44,8 @@ export default class Contact extends Component {
         <img className='img-fluid' src={require("./Images/myMap.png")} alt="Map" />
       </div>
       <div>
-        <i className="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
+
+        <a  href={`mailto:miller.brett.andrew@gmail.com`}><span className="fa fa-envelope-o fa-2x" id='mail' aria-hidden="true"></span> </a>
       </div>
 
   </div>

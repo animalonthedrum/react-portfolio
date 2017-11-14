@@ -1,28 +1,123 @@
 .footer{
 width: 100vw;
   float:left;
-  background-color: blue;
+  background-color: gray;
   height:9em;
   justify-content: flex-end;
-color: white;
+color: black;
 
 }
 
 .verticalText{
 	transform: rotate(90deg);
 	transform-origin: left bottom 0;
-  color: white;
-  float: left;
-  justify-content: flex-end;
+  color: black;
+  display: inline-block;
+float: right;
+
+
 
 }
 
 .socialIcons {
+text-align: right;
+color:black!important;
+}
 
-text-align: center;
+a {
+  color:black
 }
 
 .fa{
   margin: 1em;
+  cursor:  pointer;
 
+}
+.fa:hover{
+
+  transform: rotate(7deg);
+
+}
+
+
+.grow { transition: all .33s ease-in-out; }
+.grow:hover { transform: scale(1.4); }
+
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-15px);
+		-ms-transform:     translateY(-15px);
+		transform:         translateY(-15px)
+	}
+	60% {
+		-webkit-transform: translateY(-5px);
+		-ms-transform:     translateY(-5px);
+		transform:         translateY(-5px)
+	}
+}
+span i {
+  -webkit-animation-duration: 1s;
+animation-duration: 1s;
+-webkit-animation-fill-mode: both;
+animation-fill-mode: both;
+-webkit-animation-timing-function: ease-in-out;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+-webkit-animation-iteration-count: infinite;
+
+}
+
+span i:hover {
+  cursor:  pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+}
+
+.flashit:hover{
+  /*color:rgb(241, 213, 141);*/
+	-webkit-animation: flash linear 1s;
+	animation: flash linear 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes flash {
+	0% { opacity: .1; }
+	50% { opacity: 1; }
+	100% { opacity: .1; }
+}
+@keyframes flash {
+	0% { opacity: .1; }
+	50% { opacity: 1; }
+  100% { opacity: .1; }
+}
+
+.slider:hover #slide {
+  transition: 1s;
+  left:0;
+}
+
+#slide {
+    position: absolute;
+    left: -100vw;
+    width: 100vw;
+    height: 9em;
+    background: transparent;
+    -webkit-animation: slide 0.8s forwards;
+    -webkit-animation-delay: 1s;
+    animation: slide 0.8s forwards;
+    animation-delay: 1s;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
 }
