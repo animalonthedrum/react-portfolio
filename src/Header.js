@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ScrollAnimation from 'react-animate-on-scroll';
+
 
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 
@@ -20,11 +22,21 @@ export default class Header extends React.Component {
 render(){
   return (
     <header className='wrapper'>
-      <Navbar color='faded' light toggleable>
+
+
+      <Navbar color='faded'  fixed-top light toggleable>
 
         <div className='circle'><div className='cover'>
 </div></div>
-<NavbarBrand className='brand' tag={Link} to='/'>B.Miller</NavbarBrand>
+
+
+
+
+
+
+<NavbarBrand className='brand' tag={Link} to='/'>B.Miller
+  </NavbarBrand>
+
 
           <NavbarToggler right onClick={this.toggleNavbar} />
             <Collapse isOpen={this.state.isOpen} navbar>
@@ -41,6 +53,7 @@ render(){
                 </Nav>
               </Collapse>
             </Navbar>
+
           </header>
   );
 }

@@ -1,4 +1,6 @@
 html{
+  height:100%;
+  width: 100%;
 
 }
 
@@ -7,6 +9,15 @@ button {
   background-color: transparent!important;
   text-align: center;
 
+
+}
+
+.wrapper {
+  box-sizing: border-box;
+  width:100vw;
+
+  z-index: 100;
+  background: white;
 
 }
 
