@@ -19,14 +19,15 @@ import {
 
 
 ReactDOM.render(<Router>
-<div>
-<Header />
 
-  <div className='content'>
+<div className='MainFrame'>
+    <Header />
+<div className='container'>
   <Route exact path="/" component={Home} />
   <Route path="/portfolio" component={Portfolio} />
     <Route path="/contact" component={Contact}/>
     </div>
+
       <Footer />
 </div>
 

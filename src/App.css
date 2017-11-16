@@ -13,17 +13,20 @@ font-family: 'Press Start 2P', cursive!important;
 }
 
 .wrapper {
-
-  width:100vw;
-
-  z-index: 100;
+width:100vw;
   background: white;
-
-
 }
 
+.MainFrame {
+margin-top: 2em;
+}
 
-.circle {
+header {
+position: absolute;
+  display: block;
+  margin-bottom: 3em;
+}
+/*.circle {
   overflow: hidden;
 position:inherit;
   width: 10em;
@@ -58,4 +61,4 @@ position:inherit;
 .brand{
   margin-left: -5.5em;
   z-index: 2;
-}
+}*/

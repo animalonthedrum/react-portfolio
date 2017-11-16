@@ -1,11 +1,18 @@
 import React, { Component } from 'react';
 
+
+
 export default class Home extends Component {
-  render(){
+
+render(){
     return(
-      <div className='real'>
-        I am Home
-      </div>
+      <div>
+
+      <div className='container'>
+
+<h1>Home</h1>
+</div>
+</div>
     );
   }
 }
