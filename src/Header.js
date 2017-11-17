@@ -25,7 +25,7 @@ render(){
     <div className='wrapper'>
 
 
-      <Navbar color="dark" className="navbar-dark navbar-expand-sm" toggleable>
+      <Navbar color="dark" className="navbar-dark fixed-top navbar-expand-sm" toggleable>
 
         <div className='circle'><div className='cover'>
 </div></div>
