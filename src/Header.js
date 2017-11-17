@@ -21,7 +21,8 @@ export default class Header extends React.Component {
   }
 render(){
   return (
-    <header className='wrapper'>
+    <div>
+    <div className='wrapper'>
 
 
       <Navbar color="dark" className="navbar-dark navbar-expand-sm" toggleable>
@@ -38,23 +39,24 @@ render(){
   </NavbarBrand>
 
 
-          <NavbarToggler right onClick={this.toggleNavbar} />
+          <NavbarToggler true onClick={this.toggleNavbar} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className='ml-auto' navbar>
                 <NavItem className='mx-auto'>
-                  <NavLink className='.menu' tag={Link} to='/'>Home</NavLink>
+                  <NavLink className='.menu' tag={Link} to='/' onClick={this.toggleNavbar}>Home</NavLink>
                   </NavItem>
                 <NavItem className='mx-auto'>
-                  <NavLink tag={Link} to='/portfolio'>Portfolio</NavLink>
+                  <NavLink tag={Link} to='/portfolio' onClick={this.toggleNavbar}>Portfolio</NavLink>
                   </NavItem>
                 <NavItem className='mx-auto'>
-                  <NavLink tag={Link} to='/contact'>Contact</NavLink>
+                  <NavLink tag={Link} to='/contact' onClick={this.toggleNavbar}>Contact</NavLink>
                   </NavItem>
                 </Nav>
               </Collapse>
             </Navbar>
 
-          </header>
+          </div>
+        </div>
   );
 }
 }
