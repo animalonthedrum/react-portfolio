@@ -11,26 +11,29 @@ export default class Portfolio extends Component {
           <br />
           <br />
           <br />
-                <div>
-          <ParallaxImage
-            reduceHeight={0.3}
-            src={require("./Images/ffmock15x7.jpg")}/>
-        </div>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-            <ParallaxImage
-              reduceHeight={0.6}
-              src={require("./Images/ffmock15x7.jpg")}>
 
-            </ParallaxImage>
+            <ParallaxImage
+              reduceHeight={0.4}
+              src={require("./Images/ffmock35x7.jpg")}>
+</ParallaxImage>
+
+      <ParallaxImage
+        reduceHeight={0.2}
+        src={require("./Images/fflogo5x7.jpg")}/>
+    
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
+
+
             <h1>ok how jdjdjsk sdosdjsdoa sknsdflknsdfs spsdflknsdf s ssfglkn</h1>
             <h1>ok how jdjdjsk sdosdjsdoa sknsdflknsdfs spsdflknsdf s ssfglkn</h1>
             <h1>ok how jdjdjsk sdosdjsdoa sknsdflknsdfs spsdflknsdf s ssfglkn</h1>

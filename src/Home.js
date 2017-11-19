@@ -5,6 +5,7 @@ import {
 
 } from './Styles/home.style';
 import WhenInView from './WhenInView';
+import { Fade } from 'reactstrap';
 
 export default class Home extends Component {
 

@@ -4,6 +4,7 @@ import './font-awesome-4.7.0 3/css/font-awesome.min.css';
 import './App.css';
 
 
+
 export default class Footer extends Component {
   render(){
     return(
